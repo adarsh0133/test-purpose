@@ -33,6 +33,9 @@ router.post("/author/update/:id",isAuthenticated, AuthorUpdate);
 // POST /author/reset-password/:id
 router.post("/author/reset-password/:id",isAuthenticated, AuthorResetPassword);
 
+// POST /author/create-book
+router.post("/author/create-book",isAuthenticated, createBook);
+
 // POST /author/send-mail
 // router.post("/author/send-mail", AuthorResetPassword);
 
